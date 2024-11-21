@@ -25,9 +25,10 @@ def playListToRSS(listID):
     fg.subtitle("Youtube oynatma listeleri için oluşturulmuştur.")
     fg.image(url="favicon.ico", width="16", height="16")
 
-    print(p.video_urls)
+    # print(p.video_urls)
 
-    for v in p.videos[-1:-5:-1]:
+    for v in p.videos:
+    # for i in p.video_urls[-1:-9:-1]:
         # v = YouTube(i)
         fe = fg.add_entry()
         fe.id(v.watch_url)
